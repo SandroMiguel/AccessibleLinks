@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+
+  "name": "Accessible Links",
+  "description": "Esta extensão permite que pessoas com deficiência melhorem a sua navegação na web.",
+  "version": "0.1",
+  "icons": {
+	  "16":		"icons/16x16.png",
+	  "48": 	"icons/48x48.png", 
+	  "128": 	"icons/128x128.png" 
+  },
+
+  "browser_action": {
+    "default_icon": "icon_19.png"
+  },
+  "background": {
+	"scripts": ["background.js"]
+  },
+  "content_scripts": [
+  {
+	"matches": ["http://*/*", "https://*/*", "file:///*/*"],
+	"css": ["al_styles.css"],
+	"js": ["jquery.min.js","content.js"]
+  }
+  ],
+  "web_accessible_resources": [
+	"al_styles.css"
+  ],
+  
+  "web_accessible_resources": [
+    "icons/*.png",
+	"al_styles.css"
+  ],
+  
+  "permissions": [ "tts" ],
+  
+  "options_page": "options.html"
+  
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.al_link_active {
+	background-color: #87b401;
+}
+
+#al_status {
+position:fixed; bottom:25px; left:0px; line-height:48px; background-color:#87b401; font-family:Arial,sans-serif; font-size:17px; font-weight:bold; box-shadow: 3px 3px 4px #666; padding:10px; border-radius: 0 3em 3em 0; vertical-align:bottom; z-index:999	
+	
+}
